@@ -2,6 +2,14 @@ let submitBtn=document.querySelector("#sendBtn");
 let checkBox=document.querySelector("#checkTerm")
 let form=document.querySelector("#get_mail")
 let alertM=document.querySelector(".alert_tos");
+checkBox.onclick=function(){
+    if (checkBox.checked == true) {
+        alertM.style.display = 'none';
+    }
+    else{
+        form.removeAttribute('action');
+    }
+}
 submitBtn.onclick=function(){
     if (checkBox.checked == true) {
         alertM.style.display = 'none';
@@ -13,14 +21,5 @@ submitBtn.onclick=function(){
         alertM.style.right = "10px";
         return false;
     }
-checkBox.onclick=function(){
-    if (checkBox.checked == true) {
-        alertM.style.display = 'none';
-    }
-    else{
-        form.removeAttribute('action');
-        alertM.style.display = 'flex';
-        return false;
-    }
-}
+
 }
