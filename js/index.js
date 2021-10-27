@@ -7,15 +7,17 @@ submitBtn.onclick=function(){
         form.setAttribute('action','/includes/action.php');
     }
     else{
+        form.removeAttribute('action');
     alertM.style.display = 'flex';
     alertM.style.right = "10px";
+    return false;
     }
 checkBox.onclick=function(){
     if (checkBox.checked == true) {
         alertM.style.display = 'none';
     }
     else{
-        form.setAttribute('action','');
+        return false;
     }
 }
 }
