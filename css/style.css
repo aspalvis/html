@@ -1,3 +1,8 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 html{
     margin: 0;
     padding: 0;
@@ -66,9 +71,11 @@ h2{
 }
 .navbar a{
     color: #6A707B;
+    position: relative;
     text-decoration: none;
     margin-right: 30px;
 }
+
 .navbar a:last-child{
     margin-right: 0px;
 }
@@ -395,4 +402,24 @@ hr{
     z-index: 3;
     bottom: 10px;
 
+}
+
+.links a::after{
+    transition:0.4s cubic-bezier(0.8, 1, 0.7, 1);
+    content: "";
+    position: absolute;
+    bottom:-8px;
+    width: 0%;
+    left:0;
+    background: #4066A5;
+    height: 2px;
+}
+.links a:hover::after{
+    content: "";
+    position: absolute;
+    bottom:-8px;
+    width: 100%;
+    left:0;
+    background: #4066A5;
+    height: 3px;
 }
