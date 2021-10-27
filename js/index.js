@@ -18,6 +18,8 @@ checkBox.onclick=function(){
         alertM.style.display = 'none';
     }
     else{
+        form.removeAttribute('action');
+        alertM.style.display = 'flex';
         return false;
     }
 }
