@@ -1,1 +1,1 @@
-# magebit
+# Test task for Magebit
