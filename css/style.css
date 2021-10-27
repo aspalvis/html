@@ -259,6 +259,12 @@ hr{
     .navbar a:last-child{
         margin-right: 0px;
     }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
     
     img#logo{
         height: 40px;
