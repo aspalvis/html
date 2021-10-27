@@ -29,12 +29,12 @@
                     </h2>
                 </div>
                 <div class="mail-input">
-                    <form action="/includes/" method="GET">
-                        <input placeholder="Type your email address here…" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required>
-                        <button type="submit"><img src="images/ic_arrow.svg" alt=""></button>
+                    <form name="form" id="get_mail" method="GET">
+                        <input name="email" placeholder="Type your email address here…" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required>
+                        <button id="sendBtn"><img src="images/ic_arrow.svg" alt=""></button>
                     </form>
                     <div class="checkbox">
-                        <input type="checkbox" >
+                        <input id="checkTerm" type="checkbox" >
                         <span class="checkmark">I agree to <a id="tos_link" href="#">terms of service</a>
                         </span>
                     </div>
@@ -58,5 +58,11 @@
 
             </div>
         </div>
+            <div class="alert_tos">
+                <p>
+                    Please agree with terms of service, to subscribe!
+                </p>
+            </div>
+        <script src="js/index.js"></script>
 </body>
 </html>
