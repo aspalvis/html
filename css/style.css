@@ -144,9 +144,6 @@ button#sendBtn{
     height: 26px;
     
 }
-.checkbox a{
-    color: black;
-}
 
 input[type=email]{
     padding-left: 40px;
@@ -422,4 +419,13 @@ hr{
     left:0;
     background: #4066A5;
     height: 3px;
+}
+.checkbox span a{
+    color: black;
+}
+.checkbox span a:hover{
+    color: #4066A5;
+}
+.checkbox span a:visited{
+    color: #233759;
 }
