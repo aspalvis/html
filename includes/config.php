@@ -1,7 +1,7 @@
 <?php
 $config=array(
     'db' => array(
-        'server' => 'http://andris-spalvis.magebithr.com/',
+        'server' => 'localhost',
         'username'=>'root',
         'password'=>'andris',
         'name'=>'subscribed_emails'
