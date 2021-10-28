@@ -189,6 +189,7 @@ input[type=email]::placeholder{
     color: #6A707B;
 }
 .footer{
+    position: relative;
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -198,6 +199,38 @@ input[type=email]::placeholder{
 .footer img{
     margin-right: 20px;
     padding: 0;
+}
+.footer a{
+    position: relative;
+}
+.footer a::after{
+    transition: all 0.4s ease-in-out;
+    content: "";
+    border: 3px solid #4066A5;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.footer a#fb::after{
+    border: 3px solid #4267B2;;
+}
+.footer a#ig::after{
+    border: 3px solid #C13584;
+}
+.footer a#twt::after{
+    border: 3px solid #1DA1F2;
+}
+.footer a#yt::after{
+    border: 3px solid #FF0000;
+}
+.footer a:hover::after{
+    opacity: 1;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+
 }
 
 hr{

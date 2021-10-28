@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Union.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pineapple.</title>
 </head>
 <body>
         <div class="main">
@@ -15,7 +16,7 @@
                     <img id="brand_title" src="images/pineapple.svg" alt="">
                 </div>
                 <div class="links">
-                    <a href="#">About</a>
+                    <a href="includes/testfun.php">About</a>
                     <a href="#">How it works</a>
                     <a href="#">Contact</a>
                 </div>
