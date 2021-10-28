@@ -3,7 +3,7 @@ $config=array(
     'db' => array(
         'server' => 'localhost',
         'username'=>'root',
-        'password'=>'test12345',
+        'password'=>'andris',
         'name'=>'subscribed_emails'
     )
 )
