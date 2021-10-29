@@ -1,9 +1,9 @@
 <?php
 $config=array(
     'db' => array(
-        'server' => 'magebit',
+        'server' => 'localhost',
         'username'=>'root',
-        'password'=>'',
+        'password'=>'andris',
         'name'=>'subscribed_emails'
     )
 )
