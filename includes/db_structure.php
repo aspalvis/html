@@ -4,7 +4,6 @@
     $tables=$_GET['tables'];
     $platforms=$_GET['platforms'];
     $export=$_GET['csv_exp'];
-
     if ($tables!=null) {
         if ($tables=='join') {
             echo ('
@@ -16,8 +15,8 @@
                     <th>platform_name</th>
                 </tr>
             ');
-            $sql_tables = mysqli_query($connection,"SELECT * FROM `email` 
-            INNER JOIN `email_platform` ORDER BY `platform_name`;");
+            $sql_tables = mysqli_query($connection,"SELECT * FROM email 
+            INNER JOIN email_platform ON email.platform_id = email_platform.platform_id ORDER BY platform_name;");
             while ($record = mysqli_fetch_assoc($sql_tables)) {
                 echo    (
                 '<tr style="text-align:center"><td>'.$record['em_id'].'</td><td>'.$record['address'].'</td><td>'.$record['platform_id'].'</td><td>'.$record['platform_name'].'</td></tr>'
@@ -83,8 +82,8 @@
         if ($export!=null) {
             if ($export=='join') {
                 $allData="";
-                $sql=$connection->query("SELECT * FROM `email` 
-                INNER JOIN `email_platform` ORDER BY `em_id`;");
+                $sql=$connection->query("SELECT * FROM email 
+                INNER JOIN email_platform ON email.platform_id = email_platform.platform_id ORDER BY em_id;");
                 while ($data = $sql->fetch_assoc()) {
                             $allData.=$data['em_id'].','.$data['address'].','.$data['platform_name'].','.$data['platform_id']."\n";
                 }
