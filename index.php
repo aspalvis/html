@@ -16,7 +16,7 @@
                     <img id="brand_title" src="images/pineapple.svg" alt="">
                 </div>
                 <div class="links">
-                    <a href="includes/testfun.php">About</a>
+                    <a href="data.php">Subscribers</a>
                     <a href="#">How it works</a>
                     <a href="#">Contact</a>
                 </div>
