@@ -39,8 +39,7 @@ class email{
       $sql_pop_email="INSERT INTO email (`em_id`, `address`, `platform_id`)
       VALUES (NULL,'$this->email_addr','$this->platform_id');";
           if ($connection->query($sql_pop_email) === TRUE){
-                $server=$config['db']['server'];
-                header("Location: http://$server", true, 301);
+                header("Location: http://andris-spalvis.magebithr.com/", true, 301);
                 exit();
           }else {
               echo "Error: " . $sql_pop . "<br>" . $connection->error;
